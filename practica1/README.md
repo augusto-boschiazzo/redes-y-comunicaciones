@@ -76,7 +76,7 @@
 
 ---
 
-11. _¿Cómo se llama la PDU de las capas de Aplicación, Transporte, Red y Enlace?
+11. _¿Cómo se llama la PDU de las capas de Aplicación, Transporte, Red y Enlace?_
 
    Las distintas PDU (**Protocol Data Unit**) para las capas son:
     *Aplicación (Mensaje): Es el paquete de información que envía una aplicación de un end system a la aplicación de otro.
