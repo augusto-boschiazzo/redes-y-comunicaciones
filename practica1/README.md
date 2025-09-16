@@ -1,6 +1,6 @@
 # Practica 1
 
-## Introducción
+### Introducción
 
 ---
 
@@ -58,4 +58,48 @@
 
    El Internet es una red conmutada de paquetes. Esto implica que se puedan realizar múltiples conexiones a la vez usando los mismos recursos, y cada conexión esperará su turno para usarlo. Esto permite también que un dispositivo tenga varias conexiones a la vez, permitiendo que múltiples aplicaciones accedan a su propia conexión.
 
+---
 
+9. _Describa brevemente las distintas alternativas que conoce para acceder a Internet en su hogar._
+
+   Desde mi hogar, puedo acceder al internet mediante mi router, ya sea por cable Ethernet directamente conectado o desde WiFi. También usando datos celulares, usando antenas celulares. 
+
+   Ambos medios se conectan a un ISP, que se comunica con otros ISP para servir el contenido de distintos lugares del mundo.
+
+---
+
+10. _¿Qué ventajas tiene una implementación basada en capas o niveles?_
+
+   Una implementación basada en capas permite organizar un sistema complejo, de manera tal que cada capa ofrece servicio a la capa superior, y accede a los servicios de la capa inferior, dando lugar a modularización.
+
+   Además permite que se usen distintos protocolos por capa, dando lugar a un sistema en el que tanto el cliente como el servidor pasan por las mismas capas, y cada una de ellas usa el mismo protocolo en una computadora que en la otra.
+
+---
+
+11. _¿Cómo se llama la PDU de las capas de Aplicación, Transporte, Red y Enlace?
+
+   Las distintas PDU (**Protocol Data Unit**) para las capas son:
+    *Aplicación (Mensaje): Es el paquete de información que envía una aplicación de un end system a la aplicación de otro.
+    *Transporte (Segmento): El mensaje se divide en partes y es enviado usando el protocolo TCP o UDP de Internet.
+    *Red (Datagrama): La capa de transporte envía un segmento con una dirección, y la capa de red se encarga de encontrar el destino. Se usa el protocolo IP.
+    *Enlace (Frame): Los datagramas se enviarán a través de varios nodos de enlace antes de alcanzar el destino. En cada uno de ellos, puede usar distintos protocolos de capa de enlace, por ejemplo, de un enlace a otro puede usar Ethernet, y luego PPP (Punto a punto).
+
+---
+
+12. _¿Qué es la encapsulación? Si una caparealiza la encapsulación de datos, ¿qué capa del nodo receptor realizará el proceso inverso?_
+
+   La encapsulación de datos es el proceso por el cual cada capa organiza el mensaje agregando información adicional, ya sea para la capa inferior como para la misma capa al otro lado de la conexión. 
+
+   Este proceso permite la comunicación entrees el proceso por el cual cada capa organiza el mensaje agregando información adicional, ya sea para la capa inferior como para la misma capa al otro lado de la conexión. Este proceso permite la comunicación entre las capas de los distintos dispositivos.
+
+   Siempre que se realiza una encapsulación, el proceso inverso lo realizará la misma capa del dispositivo que recibe la comunicación.
+
+---
+
+13. _Describa cuales son las funciones de cada una de las capas del stack TCP/IP o protocolo de Internet._
+
+   Las capas del protocolo TCP/IP son las capas de aplicación, transporte, red, enlace y física, aunque en ocasiones se agrupan a la capa de enlace y la física para simplificar.
+
+   La capa de aplicación se encarga de representar datos, recibirlos o producirlos, y enviar mensajes a destinatarios de otros end systems.
+
+   La capa de transporte realiza la comunicación con el dispositivo destino, en el internet existen dos protocolos de transporte: **TCP** y **UDP**.
