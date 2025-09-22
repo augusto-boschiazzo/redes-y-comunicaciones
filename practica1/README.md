@@ -102,4 +102,18 @@
 
     La capa de aplicación se encarga de representar datos, recibirlos o producirlos, y enviar mensajes a destinatarios de otros end systems.
 
-    La capa de transporte realiza la comunicación con el dispositivo destino, en el internet existen dos protocolos de transporte: **TCP** y **UDP**.
+    La capa de transporte realiza la comunicación de mensajes de la capa de aplicación de distintos endpoints. En el internet existen dos protocolos de transporte: **TCP** y **UDP**.
+
+    La capa de red envía los segmentos a la capa de transporte de otro host. La capa de red del Internet tiene protocolos que indican la ruta que debe seguir el mensaje para llegar al destino.
+
+    La capa de enlace permite enviar la información de un nodo al siguiente. Incluye protocolos como Ethernet, WiFi, PPP, entre otros.
+
+    La capa física mueve los datos entre los nodos de a bits. Existen distintos medios de transmisión, como los cables coaxiales, fibra óptica, entre otros.
+
+---
+
+14. _Compare el modelo OSI con la implementación TCP/IP_
+
+    El modelo OSI es un modelo teórico creado por la ISO en 1984. Consta de 7 capas: Aplicación, presentación, sesión, transporte, red, enlace y física.
+    
+    Respecto del modelo TCP/IP, agrega las capas de presentación y de sesión. El modelo TCP/IP es el usado por el Internet para acceder a la Web, por el uso de sus protocolos, ya que TCP por ejemplo engloba las tres capas más altas del modelo OSI, ya que envía y formatea los datos para su envío, además de encargarse de mantener la sesión de la conexión.
