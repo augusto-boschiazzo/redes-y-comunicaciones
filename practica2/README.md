@@ -72,6 +72,8 @@
        ```
        GET /index.html HTTP/1.1
        Host: www.misitio.com
+       User-Agent: curl/7.74.0
+       Accept: "/index.html"
        ```
 
 ---
