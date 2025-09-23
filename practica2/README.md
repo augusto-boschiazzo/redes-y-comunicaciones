@@ -70,8 +70,8 @@
        Si se quisiera realizar ese requisito, la información enviada en cabeceras sería principalmente la de Host, indicando la página deseada. El requisito quedaría de la siguiente manera: 
 
        ```
-GET /index.html HTTP/1.1
-Host: www.misitio.com
+       GET /index.html HTTP/1.1
+       Host: www.misitio.com
        ```
 
 ---
